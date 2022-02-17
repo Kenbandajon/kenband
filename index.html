@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Analyzing the Data of Workers(Using Linear Regression Multivariate)</h1>
+<h3>Author:Ken Bandajon BSIT 2A</h3>
+<h5>This is my Final Project In Analyzing A dataset Using Linear Regression</h5>
+<p>This my datasets representing the 9 Workers: Years of Experience,Test and Interview Scores and the Corresponding Salaries.I would like to determine how the Experience Or Scores Affect the Dependent Variable which is the SALARY and How To Predict the Salary of Given Independent Variable (Experience,Test and Oral Score)</p>
+<p>So this is my datasets.</p>
+<img src="csv.jpg" alt="Girl in a jacket"
+style="width:250px;height:150px;">
+<p>This is our formula'
+(SALARY=m1*experience+m2*testscore*intscore+b/intercept)
+m1,m2 and m3 are the coefficients.</p>
+<p>So we Import the Matplotlib for plotting,Pandas for reading the csv,Sklearn for Linear Model.We use (df=pd.read_csv)to read the file or datasets</p>
+<img src="1.jpg" alt="Girl in a jacket"
+style="width:250px;height:200px;">
+<p>So we successfully loaded and read the datasets.We see that the datasets are complete ,so we don't need to fill any row or columns.</p>
+<p>Using the (reg.linear_model.LinearRegression) and the (reg.fit),we successfully loaded the Linear Regression Model.</p>
+<img src="3.jpg" alt="Girl in a jacket"
+style="width:235px;height:90px;">
+
+<p>Next we put the (reg.coef_) to get the coefficients based on the equation formula of the Linear Regression. We have three independent variable the EXPERIENCE,TEST AND INTERVIEW SCORES.The three coefficient are:(-28.87),(607.70),(1013.47).</p>
+<img src="2.jpg" alt="Girl in a jacket"
+style="width:235px;height:90px;">
+<p>We put the (reg.intercept_) to get the intercept value of the data.The intercept value is 3704.05</p>
+<img src="4.jpg" alt="Girl in a jacket"
+style="width:235px;height:90px;">
+<p>After we got the Coefficients and the Intercept we now can Predict the Salary of Given Independent Variable.So we Use (reg.predict([[]])).</p>
+<p>Example: Experience:12years Test Score:8/10 , Interview Score: 7/10</p>
+<p>So we type like this: reg.predict([[12,8,7]]),this will help us to predict the salary which is (83,821).</p>
+<img src="5.jpg" alt="Girl in a jacket"
+style="width:200px;height:100px;">
+<img src="6.jpg" alt="Girl in a jacket"
+style="width:200px;height:100px;">
+<h3>CONCLUSION OF MY DATASETS</h3>
+<p>The datasets show us about the worker's experience,scores and salaries.We see that each worker has different salaries.</p>
+<img src="7.jpg" alt="Girl in a jacket"
+style="width:200px;height:100px;">
+<p>Based on the graph below it shows that the workers are different interms of oral and test scores.</p>
+<img src="8.jpg" alt="Girl in a jacket"
+style="width:250px;height:200px;">
+<img src="9.jpg" alt="Girl in a jacket"
+style="width:250px;height:200px;">
+<p>Conclusion:
+Therefore I conclude that the if a Worker has higher Experienc number their is a possibility that he/she will got a higher salary than the lower Experience Worker based on the data.</p>
+<img src="10.jpg" alt="Girl in a jacket"
+style="width:250px;height:200px;">
+<img src="11.jpg" alt="Girl in a jacket"
+style="width:250px;height:200px;">
+<p>Worker # 2 Stats are Experience:4 ,Score Total: 14/20 Salary:45,000</p>
+
+<p>Worker # 8 Stats are  Experience:11, Total Score:15/20 ,Salary: 80,000</p>
+<h3>ScreenRecord of the Program</h3>
+<video width="320" height="240" controls>
+  <source src="Sc.mp4" type="video/mp4">
+  <source src="Sc.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
